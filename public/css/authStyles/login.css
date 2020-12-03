@@ -1,0 +1,95 @@
+body{
+    background-color: #eee !important;
+}
+
+.login__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #EEEEEE;
+
+}
+
+.login__card{
+    background: #fff;
+    width: 35%;
+    padding: 30px 60px 10px 60px;
+}
+.login__card:last-child{
+    margin-top: 15px;
+    padding: 10px 60px 25px 60px;
+}
+.login__card:last-child {
+    text-align: center;
+}
+
+.login__header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.login__header img{
+    width: 60%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.form__group{
+    padding: 0px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+}
+.form__group label{
+    padding: 10px;
+    color: #949391;
+}
+.form__group input,
+.form__group textarea {
+    background-color: #eee;
+    padding: 10px;
+    font-size: 20px;
+}
+.form__group input::placeholder{
+    color: #949391;
+}
+.form__group button{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.form__group:last-child a{
+    text-align: center;
+    padding: 15px 15px 0px 15px;
+}
+
+.is__invalid{
+    border: 2.5px solid #ff3333 !important;
+    border-radius: 5px;
+    color: #ff3333 !important;
+}
+
+.invalid__feedback{
+    color: #ff3333 !important;
+    display: flex;
+    flex-direction: column;
+}
+.invalid__feedback strong{
+    padding-top: 10px;
+}
+
+@media (max-width : 999px){
+    .login__card{
+        width: 50%;
+    }
+}
+@media (max-width : 650px){
+    .login__card{
+        width: 80%;
+    }
+}

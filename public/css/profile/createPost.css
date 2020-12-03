@@ -1,0 +1,95 @@
+.create__container{
+    padding: 0 20px 0;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    margin: 0 auto 30px;
+    max-width: 935px;
+    box-sizing: content-box;
+    width: calc(100% - 40px);
+}
+
+.create__container form{
+    background-color: white;
+    padding: 5% 10%;
+}
+.create__container.editProfile form{
+    padding-top: 0;
+}
+.create__container.editProfile header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.create__container.editProfile header span:first-child{
+    font-weight: 700;
+    /* flex: 1; */
+    font-size: 20px;
+    color: #262626;
+}
+.create__container.editProfile header span.flashMessage{
+    border: 1.4px solid #2fa32f;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    /* flex: 2; */
+    color: #2fa32f;
+}
+.create__container.editProfile header span.flashMessage i{
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 25px;
+    margin-left: 10px;
+    transition: all 0.5s ease;
+}
+.create__container.editProfile header span.flashMessage i:hover{
+    transform: scale(1.5);
+}
+
+.create__container form label{
+    color: #131212;
+    font-weight: 600;
+    font-size: 18px;
+}
+.create__container form textarea{
+    resize: none;
+}
+.create__container form textarea{
+    resize: none;
+}
+.create__container form textarea::placeholder{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.addImageWraper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.addImageWraper span{
+    color: #f04714;
+    display: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
+.addImageWraper label{
+    padding: 5px 0 0 10px;
+}
+.addImageWraper label svg{
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+.addImageWraper label:hover svg{
+    fill: #3897F1;
+    transform: scale(1.1);
+}
+.addImagePreview{
+    display: none;
+    transition: all 0.5s ease;
+}
+.addImagePreview img{
+    width: 200px;
+    height: 200px;
+}
